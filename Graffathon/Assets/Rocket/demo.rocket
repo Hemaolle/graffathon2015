@@ -1,16 +1,9 @@
 <sync rows="128">
 	<tracks>
 		<track name="test_track_oskari">
-			<key row="0" interpolation="2" value="0"/>
-			<key row="1" interpolation="0" value="0.5"/>
-			<key row="4" interpolation="0" value="0"/>
-			<key row="5" interpolation="0" value="0.5"/>
-			<key row="8" interpolation="2" value="0"/>
-			<key row="9" interpolation="0" value="0.5"/>
-			<key row="12" interpolation="0" value="0"/>
-			<key row="13" interpolation="0" value="0.5"/>
-			<key row="16" interpolation="1" value="0"/>
-			<key row="24" interpolation="0" value="3"/>
+			<key row="0" interpolation="1" value="0"/>
+			<key row="32" interpolation="1" value="3"/>
+			<key row="52" interpolation="0" value="0"/>
 		</track>
 		<track name="camera_3d_text">
 			<key row="0" interpolation="1" value="0"/>
