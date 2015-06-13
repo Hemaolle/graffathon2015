@@ -27,6 +27,8 @@ public class Explode : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Time.time > delay) {
+//			Debug.Log ("originalPosition " + originalPosition); 
+//			Debug.Log ("directionFromStart " + directionFromStart);
 			time = Time.time - delay;
 			phase = SetTimeScale.explodePhaseStatic;
 			transform.position = originalPosition + directionFromStart * phase;

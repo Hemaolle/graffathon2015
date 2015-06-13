@@ -3,6 +3,8 @@ using System.Collections;
 
 public class SplitMesh : MonoBehaviour {
 	public GameObject meshTemplate;
+	public float rotationMultiplierMin = 10;
+	public float rotationMultiplierMax = 100;
 	// Use this for initialization
 	void Start () {
 		Mesh mesh = GetComponent<MeshFilter>().mesh;
@@ -11,13 +13,25 @@ public class SplitMesh : MonoBehaviour {
 			Vector3[] vertices = new Vector3[3];
 			for (int i = 0; i < 3; i++) {
 				vertices[i] = mesh.vertices[mesh.triangles[triangleIndex]];
-				Debug.Log (triangleIndex);
+//				Debug.Log (triangleIndex);
 				triangleIndex++;
 			}
-			GameObject newObject = Instantiate(meshTemplate, transform.position, transform.rotation) as GameObject;
+			Vector3 averagePos = Average(vertices);
+			for (int i = 0; i < 3; i++) {
+				vertices[i] = vertices[i] - averagePos;
+			}
+			GameObject newObject = Instantiate(meshTemplate, transform.position + averagePos, transform.rotation) as GameObject;
+
 			newObject.GetComponent<MeshFilter>().mesh = CreateMeshTriangle(vertices);
 			newObject.name = "w" + triangleIndex / 3;
-			newObject.AddComponent<Explode>().SetDirectionFromStart(Average(vertices));;
+//			if (triangleIndex < 4) {
+				newObject.AddComponent<Explode>().SetDirectionFromStart(averagePos);
+
+				Rotate rotate = newObject.AddComponent<Rotate>();
+
+				rotate.rotationMultiplierMin = rotationMultiplierMin;
+				rotate.rotationMultiplierMax = rotationMultiplierMax;
+//			}
 		}
 
 //		GetComponent<MeshFilter>().mesh = CreateMeshTriangle(new Vector3[] {new Vector3(-1,-1,0), 
