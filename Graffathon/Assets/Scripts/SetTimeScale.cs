@@ -17,6 +17,7 @@ public class SetTimeScale : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		explodePhaseStatic = Rocket.instance.GetValue("test_track_oskari");
 //		explodePhaseStatic = explodePhase;
 //		Time.timeScale = currentScale;
 	}
