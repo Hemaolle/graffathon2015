@@ -40748,7 +40748,7 @@ MonoBehaviour:
   speed: 1
   bpm: 504
   player: 0
-  trackPath: Resources/Rocket/Tracks/
+  trackPath: Rocket/Tracks/
   row: 0
 --- !u!4 &1043901180
 Transform:
