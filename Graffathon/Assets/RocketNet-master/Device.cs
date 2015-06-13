@@ -105,7 +105,7 @@ namespace RocketNet
             {
                 if (!Receive(1)) return false;
                 var cmd = (Command)buffer[0];
-				Debug.LogError(cmd);
+//				Debug.LogError(cmd);
                 switch(cmd)
                 {
                     case Command.SetKey:

@@ -10,10 +10,14 @@ public class SetTimeScale : MonoBehaviour {
 	void Start () {
 	
 	}
+
+	public static void SetExplodePhase(float phase) {
+		explodePhaseStatic = phase;
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		explodePhaseStatic = explodePhase;
+//		explodePhaseStatic = explodePhase;
 //		Time.timeScale = currentScale;
 	}
 }
