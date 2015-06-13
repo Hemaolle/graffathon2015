@@ -27619,7 +27619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 11285c31d13e9e94fa9b7c3d59d4805c, type: 2}
-  camera: {fileID: 0}
+  targetCamera: {fileID: 0}
   phase: 0
   color1: {r: 1, g: 0, b: 0, a: 0}
   color2: {r: 0, g: .0482757092, b: 1, a: 0}
@@ -40774,7 +40774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 0}
-  camera: {fileID: 0}
+  targetCamera: {fileID: 0}
   phase: 0
   color1: {r: 0, g: 0, b: 0, a: 1}
   color2: {r: 1, g: 1, b: 1, a: 1}
