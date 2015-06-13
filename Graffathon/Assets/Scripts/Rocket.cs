@@ -12,7 +12,7 @@ public class Rocket : Singleton<Rocket> {
 	Track testTrack;
 	Device device;
 	private bool playing;
-	private float row;
+	public float row;
 	float startTime;
 	private float startRow;
 	private Dictionary<string, Track> tracks = new Dictionary<string, Track>();
