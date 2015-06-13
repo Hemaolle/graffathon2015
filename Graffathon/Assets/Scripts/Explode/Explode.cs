@@ -17,8 +17,8 @@ public class Explode : MonoBehaviour {
 	void Start () {
 //		GetComponent<Rigidbody>().AddExplosionForce(force, Vector3.zero, 10);
 		if(recalculateDirection)
-			directionFromStart = transform.position - Vector3.zero;
-		originalPosition = transform.position;
+			directionFromStart = transform.localPosition - Vector3.zero;
+		originalPosition = transform.localPosition;
 		speed = speed * (directionFromStart.magnitude * magnitudeMultiplier);
 	}
 
