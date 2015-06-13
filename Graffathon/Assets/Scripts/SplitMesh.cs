@@ -42,7 +42,7 @@ public class SplitMesh : MonoBehaviour {
 //		Destroy(gameObject);
 	}
 
-	Vector3 Average(Vector3[] vectors){
+	public static Vector3 Average(Vector3[] vectors){
 		Vector3 result = new Vector3();
 		foreach(Vector3 vector in vectors) {
 			result += vector;
@@ -93,7 +93,7 @@ public class SplitMesh : MonoBehaviour {
 		return m;
 	}
 
-	Mesh CreateMeshTriangle(Vector3[] vertices)
+	public static Mesh CreateMeshTriangle(Vector3[] vertices)
 	{
 		Mesh m = new Mesh();
 		m.name = "ScriptedMesh";
