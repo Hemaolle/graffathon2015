@@ -3,10 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using RocketNet;
 public class Rocket : Singleton<Rocket> {
-	Track testTrack;
-	Device device;
+
 	public float speed;
 	public float bpm;
+	public bool player;
+	public string trackPath;
+
+	Track testTrack;
+	Device device;
 	private bool playing;
 	private float row;
 	float startTime;
@@ -15,8 +19,9 @@ public class Rocket : Singleton<Rocket> {
 
 	// Use this for initialization
 	void Start () {
-		device = new Device("", false);
-		device.Connect();
+		device = new Device(Application.dataPath + "/" + trackPath, player);
+		if(!player)
+			device.Connect();
 		device.SetRow = SetRow;
 		device.Pause = SetPause;
 		device.IsPlaying = Playing;

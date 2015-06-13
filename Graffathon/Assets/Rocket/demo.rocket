@@ -16,22 +16,22 @@
 			<key row="64" interpolation="0" value="100"/>
 		</track>
 		<track name="sphereScale">
-			<key row="0" interpolation="1" value="1"/>
-			<key row="1" interpolation="1" value="5"/>
-			<key row="4" interpolation="1" value="1"/>
-			<key row="5" interpolation="1" value="5"/>
-			<key row="8" interpolation="1" value="1"/>
-			<key row="9" interpolation="1" value="5"/>
-			<key row="12" interpolation="1" value="1"/>
-			<key row="13" interpolation="1" value="5"/>
-			<key row="16" interpolation="1" value="1"/>
-			<key row="17" interpolation="1" value="5"/>
-			<key row="20" interpolation="1" value="1"/>
-			<key row="21" interpolation="1" value="5"/>
-			<key row="24" interpolation="1" value="1"/>
-			<key row="25" interpolation="1" value="5"/>
-			<key row="28" interpolation="1" value="1"/>
-			<key row="29" interpolation="1" value="5"/>
+			<key row="0" interpolation="1" value="3"/>
+			<key row="3" interpolation="0" value="1"/>
+			<key row="4" interpolation="1" value="3"/>
+			<key row="7" interpolation="0" value="1"/>
+			<key row="8" interpolation="1" value="3"/>
+			<key row="11" interpolation="0" value="1"/>
+			<key row="12" interpolation="1" value="3"/>
+			<key row="15" interpolation="0" value="1"/>
+			<key row="16" interpolation="1" value="3"/>
+			<key row="19" interpolation="0" value="1"/>
+			<key row="20" interpolation="1" value="3"/>
+			<key row="23" interpolation="0" value="1"/>
+			<key row="24" interpolation="1" value="3"/>
+			<key row="27" interpolation="0" value="1"/>
+			<key row="28" interpolation="1" value="3"/>
+			<key row="31" interpolation="0" value="1"/>
 		</track>
 	</tracks>
 	<bookmarks/>
