@@ -8,6 +8,7 @@ public class Explode : MonoBehaviour {
 	public float magnitudeMultiplier = 0.5f;
 	public float delay = 1;
 	public float phase = 0;
+	public int explosionNumber;
 	public bool recalculateDirection = false;
 
 	Vector3 directionFromStart;
@@ -27,12 +28,11 @@ public class Explode : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Time.time > delay) {
 //			Debug.Log ("originalPosition " + originalPosition); 
 //			Debug.Log ("directionFromStart " + directionFromStart);
-			time = Time.time - delay;
-			phase = SetTimeScale.explodePhaseStatic;
-			transform.localPosition = originalPosition + directionFromStart * phase;
-		}
+		time = Time.time - delay;
+		phase = Rocket.instance.GetValue ("Explosion_" + explosionNumber);
+//		phase = SetTimeScale.explodePhaseStatic;
+		transform.localPosition = originalPosition + directionFromStart * phase;
 	}
 }

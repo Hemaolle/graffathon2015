@@ -5,6 +5,7 @@ public class RandomRotate : MonoBehaviour {
 	public float phase = 0;
 	public float rotationMultiplierMin = 50;
 	public float rotationMultiplierMax = 100;
+	public string rocketKey;
 
 	float rotationMultiplier;
 	Quaternion originalRotation;
@@ -24,7 +25,7 @@ public class RandomRotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		phase = SetTimeScale.explodePhaseStatic;
+		phase = Rocket.instance.GetValue(rocketKey);
 		transform.localRotation = Quaternion.AngleAxis(phase * rotationMultiplier, rotationAxel);
 //		Debug.Log ("originalEuler " + originalEuler);
 //		Debug.Log ("(Quaternion.AngleAxis(phase * rotationMultiplier, " +

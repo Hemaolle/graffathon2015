@@ -5,6 +5,9 @@ public class SplitMesh : MonoBehaviour {
 	public GameObject meshTemplate;
 	public float rotationMultiplierMin = 10;
 	public float rotationMultiplierMax = 100;
+
+	public int explosionNumber;
+
 	// Use this for initialization
 	void Start () {
 		Mesh mesh = GetComponent<MeshFilter>().mesh;
@@ -26,12 +29,15 @@ public class SplitMesh : MonoBehaviour {
 			newObject.name = "w" + triangleIndex / 3;
 			newObject.transform.parent = transform;
 //			if (triangleIndex < 4) {
-				newObject.AddComponent<Explode>().SetDirectionFromStart(averagePos);
+			Explode explode = newObject.AddComponent<Explode>();		
+			explode.SetDirectionFromStart(averagePos);
+			explode.explosionNumber = explosionNumber;
 
-				RandomRotate rotate = newObject.AddComponent<RandomRotate>();
+			RandomRotate rotate = newObject.AddComponent<RandomRotate>();
+			rotate.rocketKey = "Explosion_" + explosionNumber;
 
-				rotate.rotationMultiplierMin = rotationMultiplierMin;
-				rotate.rotationMultiplierMax = rotationMultiplierMax;
+			rotate.rotationMultiplierMin = rotationMultiplierMin;
+			rotate.rotationMultiplierMax = rotationMultiplierMax;
 //			}
 		}
 
