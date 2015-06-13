@@ -29,7 +29,7 @@ public class Rocket : Singleton<Rocket> {
 	
 	// Update is called once per frame
 	void Update () {
-		if (playing)
+		if (playing || player)
 			row = ((Time.time - startTime) * (bpm / 60f) + startRow);
 		device.Update((int)row);
 //		Debug.Log(row);

@@ -169,7 +169,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 12505383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.55999994}
+  m_LocalPosition: {x: -.699999988, y: 0, z: -13.5900002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -192,17 +192,17 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 12505383}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86a579af6b0d1824fb82d55aed6bf2ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SplineRoot: {fileID: 184859804}
-  Duration: 10
+  Duration: 20
   OrientationMode: 0
   WrapMode: 0
   AutoStart: 1
-  AutoClose: 1
+  AutoClose: 0
   HideOnExecute: 1
 --- !u!114 &12505391
 MonoBehaviour:
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 12505383}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2156bb03158f7964d8974c6af58429d1, type: 3}
   m_Name: 
@@ -559,9 +559,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  bpm: 480
-  player: 0
-  trackPath: 
+  bpm: 504
+  player: 1
+  trackPath: Rocket/Tracks/
 --- !u!4 &1043901180
 Transform:
   m_ObjectHideFlags: 0
@@ -821,7 +821,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1580575850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.76999998}
+  m_LocalPosition: {x: -.75999999, y: 0, z: -13.6499996}
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 184859805}
