@@ -180,6 +180,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1700136400}
   - 114: {fileID: 1700136399}
+  - 114: {fileID: 1700136401}
   m_Layer: 0
   m_Name: RocketSave
   m_TagString: Untagged
@@ -215,6 +216,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1700136401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700136398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5e5999156ca4b109e63af4c1f3368d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  bpm: 60
+  player: 0
+  trackPath: Rocket/Tracks/
 --- !u!1 &1932579391
 GameObject:
   m_ObjectHideFlags: 0
