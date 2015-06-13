@@ -24,10 +24,11 @@ public class SplitMesh : MonoBehaviour {
 
 			newObject.GetComponent<MeshFilter>().mesh = CreateMeshTriangle(vertices);
 			newObject.name = "w" + triangleIndex / 3;
+			newObject.transform.parent = transform;
 //			if (triangleIndex < 4) {
 				newObject.AddComponent<Explode>().SetDirectionFromStart(averagePos);
 
-				Rotate rotate = newObject.AddComponent<Rotate>();
+				RandomRotate rotate = newObject.AddComponent<RandomRotate>();
 
 				rotate.rotationMultiplierMin = rotationMultiplierMin;
 				rotate.rotationMultiplierMax = rotationMultiplierMax;
@@ -37,8 +38,8 @@ public class SplitMesh : MonoBehaviour {
 //		GetComponent<MeshFilter>().mesh = CreateMeshTriangle(new Vector3[] {new Vector3(-1,-1,0), 
 //			new Vector3(-1, 1, 0),
 //			new Vector3(1, -1, 0)});
-
-		Destroy(gameObject);
+		GetComponent<MeshRenderer> ().enabled = false;
+//		Destroy(gameObject);
 	}
 
 	Vector3 Average(Vector3[] vectors){

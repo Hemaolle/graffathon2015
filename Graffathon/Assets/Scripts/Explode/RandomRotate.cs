@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class Rotate : MonoBehaviour {
+public class RandomRotate : MonoBehaviour {
 	public float phase = 0;
 	public float rotationMultiplierMin = 50;
 	public float rotationMultiplierMax = 100;
