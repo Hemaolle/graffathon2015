@@ -1,0 +1,9 @@
+<sync rows="128">
+	<tracks>
+		<track name="test_track_oskari">
+			<key row="0" value="0" interpolation="1"/>
+			<key row="21" value="10" interpolation="0"/>
+		</track>
+	</tracks>
+	<bookmarks/>
+</sync>
