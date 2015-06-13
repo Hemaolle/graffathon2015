@@ -359,6 +359,10 @@ namespace RocketNet
 	        SaveTracks = 5
         };
 
+		public int GetRow() {
+			return row;
+		}
+
         string @base;
         bool player;
 
