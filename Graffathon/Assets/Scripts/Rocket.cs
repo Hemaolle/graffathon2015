@@ -7,7 +7,7 @@ public class Rocket : Singleton<Rocket> {
 	public float speed;
 	public float bpm;
 	public bool player;
-	public string trackPath;
+	public string trackPath = "Rocket/Tracks/";
 
 	Track testTrack;
 	Device device;
