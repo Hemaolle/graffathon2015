@@ -27,7 +27,7 @@ public class Rocket : Singleton<Rocket> {
 		if (playing)
 			row = ((Time.time - startTime) * (bpm / 60f) + startRow);
 		device.Update((int)row);
-		Debug.Log(row);
+//		Debug.Log(row);
 	}
 
 	void SetRow(int row) {
