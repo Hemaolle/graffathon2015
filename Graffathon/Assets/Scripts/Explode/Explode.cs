@@ -31,7 +31,7 @@ public class Explode : MonoBehaviour {
 //			Debug.Log ("directionFromStart " + directionFromStart);
 			time = Time.time - delay;
 			phase = SetTimeScale.explodePhaseStatic;
-			transform.position = originalPosition + directionFromStart * phase;
+			transform.localPosition = originalPosition + directionFromStart * phase;
 		}
 	}
 }

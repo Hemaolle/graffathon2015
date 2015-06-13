@@ -83,6 +83,10 @@
 			<key interpolation="1" row="92" value="0"/>
 			<key interpolation="1" row="95" value="1"/>
 		</track>
+		<track name="row">
+			<key interpolation="1" row="0" value="0"/>
+			<key interpolation="0" row="127" value="127"/>
+		</track>
 	</tracks>
 	<bookmarks/>
 </sync>
