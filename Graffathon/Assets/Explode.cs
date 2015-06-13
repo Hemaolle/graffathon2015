@@ -7,6 +7,7 @@ public class Explode : MonoBehaviour {
 	public float speed = 4;
 	public float magnitudeMultiplier = 0.5f;
 	public float delay = 1;
+	public float phase = 0;
 
 	Vector3 directionFromStart;
 	Vector3 originalPosition;
@@ -22,7 +23,7 @@ public class Explode : MonoBehaviour {
 	void Update () {
 		if(Time.time > delay) {
 			time = Time.time - delay;
-			transform.position = originalPosition + directionFromStart * time * speed;
+			transform.position = originalPosition + directionFromStart * SetTimeScale.explodePhaseStatic;
 		}
 	}
 }
