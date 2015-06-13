@@ -8,13 +8,14 @@ public class Explode : MonoBehaviour {
 	public float magnitudeMultiplier = 0.5f;
 	public float delay = 1;
 	public float phase = 0;
+	public bool recalculateDirection = false;
 
 	Vector3 directionFromStart;
 	Vector3 originalPosition;
 	// Use this for initialization
 	void Start () {
 //		GetComponent<Rigidbody>().AddExplosionForce(force, Vector3.zero, 10);
-		if(directionFromStart == null)
+		if(recalculateDirection)
 			directionFromStart = transform.position - Vector3.zero;
 		originalPosition = transform.position;
 		speed = speed * (directionFromStart.magnitude * magnitudeMultiplier);

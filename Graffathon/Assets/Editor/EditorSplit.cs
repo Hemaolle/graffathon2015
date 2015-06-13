@@ -36,7 +36,7 @@ public class EditorSplit : EditorWindow {
 		if (myBool) {
 			myBool = false;
 
-			Mesh mesh = myObject.GetComponent<MeshFilter> ().mesh;
+			Mesh mesh = myObject.GetComponent<MeshFilter> ().sharedMesh;
 			for (int triangleIndex = 0; triangleIndex < mesh.triangles.Length;) {
 				//			Mesh newMesh = new Mesh();
 				Vector3[] vertices = new Vector3[3];
@@ -55,7 +55,7 @@ public class EditorSplit : EditorWindow {
 				newObject.name = "w" + triangleIndex / 3;
 				newObject.transform.parent = myObject.transform;
 				//			if (triangleIndex < 4) {
-				newObject.AddComponent<Explode> ().SetDirectionFromStart (averagePos);
+				newObject.AddComponent<Explode> ().recalculateDirection = true;//.SetDirectionFromStart (averagePos);
 				
 				RandomRotate rotate = newObject.AddComponent<RandomRotate> ();
 				
