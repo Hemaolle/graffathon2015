@@ -14,16 +14,22 @@ public class Explode : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 //		GetComponent<Rigidbody>().AddExplosionForce(force, Vector3.zero, 10);
-		directionFromStart = transform.position - Vector3.zero;
+		if(directionFromStart == null)
+			directionFromStart = transform.position - Vector3.zero;
 		originalPosition = transform.position;
 		speed = speed * (directionFromStart.magnitude * magnitudeMultiplier);
+	}
+
+	public void SetDirectionFromStart(Vector3 direction) {
+		directionFromStart = direction;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Time.time > delay) {
 			time = Time.time - delay;
-			transform.position = originalPosition + directionFromStart * SetTimeScale.explodePhaseStatic;
+			phase = SetTimeScale.explodePhaseStatic;
+			transform.position = originalPosition + directionFromStart * phase;
 		}
 	}
 }

@@ -17,7 +17,7 @@ public class SplitMesh : MonoBehaviour {
 			GameObject newObject = Instantiate(meshTemplate, transform.position, transform.rotation) as GameObject;
 			newObject.GetComponent<MeshFilter>().mesh = CreateMeshTriangle(vertices);
 			newObject.name = "w" + triangleIndex / 3;
-			newObject.AddComponent<Explode>();
+			newObject.AddComponent<Explode>().SetDirectionFromStart(Average(vertices));;
 		}
 
 //		GetComponent<MeshFilter>().mesh = CreateMeshTriangle(new Vector3[] {new Vector3(-1,-1,0), 
@@ -25,6 +25,15 @@ public class SplitMesh : MonoBehaviour {
 //			new Vector3(1, -1, 0)});
 
 		Destroy(gameObject);
+	}
+
+	Vector3 Average(Vector3[] vectors){
+		Vector3 result = new Vector3();
+		foreach(Vector3 vector in vectors) {
+			result += vector;
+		}
+		result /= vectors.Length;
+		return result;
 	}
 
 	Mesh CreateMesh(float width, float height)
