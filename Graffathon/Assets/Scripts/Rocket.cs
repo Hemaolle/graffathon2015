@@ -8,6 +8,7 @@ public class Rocket : Singleton<Rocket> {
 	public float bpm;
 	public bool player;
 	public string trackPath = "Rocket/Tracks/";
+	public float delay = 1;
 
 	Track testTrack;
 	Device device;
@@ -20,8 +21,11 @@ public class Rocket : Singleton<Rocket> {
 	// Use this for initialization
 	void Start () {
 		device = new Device(Application.dataPath + "/" + trackPath, player);
-		if(!player)
-			device.Connect();
+		if (!player)
+			device.Connect ();
+		else {
+			startTime = delay;
+		}
 		device.SetRow = SetRow;
 		device.Pause = SetPause;
 		device.IsPlaying = Playing;
@@ -29,7 +33,7 @@ public class Rocket : Singleton<Rocket> {
 	
 	// Update is called once per frame
 	void Update () {
-		if (playing || player)
+		if ((playing || player) && Time.time > delay)
 			row = ((Time.time - startTime) * (bpm / 60f) + startRow);
 		device.Update((int)row);
 //		Debug.Log(row);
