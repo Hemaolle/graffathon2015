@@ -85,11 +85,12 @@
 		</track>
 		<track name="row">
 			<key value="0" interpolation="1" row="0"/>
-			<key value="127" interpolation="0" row="127"/>
+			<key value="512" interpolation="0" row="511"/>
 		</track>
 		<track name="Explosion_0">
 			<key value="0" interpolation="1" row="0"/>
 			<key value="0" interpolation="1" row="128"/>
+			<key value="3" interpolation="1" row="136"/>
 			<key value="3" interpolation="1" row="160"/>
 			<key value="1" interpolation="1" row="176"/>
 			<key value="3" interpolation="1" row="192"/>
@@ -129,9 +130,56 @@
 		</track>
 		<track name="RandomRotation_1"/>
 		<track name="Exp_0_scale">
-			<key value="0.2" interpolation="1" row="0"/>
-			<key value="0.2" interpolation="1" row="64"/>
-			<key value="0.8" interpolation="1" row="128"/>
+			<key value="0.5" interpolation="0" row="31"/>
+			<key value="1" interpolation="1" row="32"/>
+			<key value="0.5" interpolation="0" row="35"/>
+			<key value="1" interpolation="1" row="36"/>
+			<key value="0.5" interpolation="0" row="39"/>
+			<key value="1" interpolation="1" row="40"/>
+			<key value="0.5" interpolation="0" row="43"/>
+			<key value="1" interpolation="1" row="44"/>
+			<key value="0.5" interpolation="0" row="47"/>
+			<key value="1" interpolation="1" row="48"/>
+			<key value="0.5" interpolation="0" row="51"/>
+			<key value="1" interpolation="1" row="52"/>
+			<key value="0.5" interpolation="0" row="55"/>
+			<key value="1" interpolation="1" row="56"/>
+			<key value="0.5" interpolation="0" row="59"/>
+			<key value="1" interpolation="1" row="60"/>
+			<key value="0.5" interpolation="0" row="63"/>
+			<key value="1" interpolation="1" row="64"/>
+			<key value="0.5" interpolation="0" row="67"/>
+			<key value="1" interpolation="1" row="68"/>
+			<key value="0.5" interpolation="0" row="71"/>
+			<key value="1" interpolation="1" row="72"/>
+			<key value="0.5" interpolation="0" row="75"/>
+			<key value="1" interpolation="1" row="76"/>
+			<key value="0.5" interpolation="0" row="79"/>
+			<key value="1" interpolation="1" row="80"/>
+			<key value="0.5" interpolation="0" row="83"/>
+			<key value="1" interpolation="1" row="84"/>
+			<key value="0.5" interpolation="0" row="87"/>
+			<key value="1" interpolation="1" row="88"/>
+			<key value="0.5" interpolation="0" row="91"/>
+			<key value="1" interpolation="1" row="92"/>
+			<key value="0.5" interpolation="0" row="95"/>
+			<key value="1" interpolation="1" row="96"/>
+			<key value="0.5" interpolation="0" row="99"/>
+			<key value="1" interpolation="1" row="100"/>
+			<key value="0.5" interpolation="0" row="103"/>
+			<key value="1" interpolation="1" row="104"/>
+			<key value="0.5" interpolation="0" row="107"/>
+			<key value="1" interpolation="1" row="108"/>
+			<key value="0.5" interpolation="0" row="111"/>
+			<key value="1" interpolation="1" row="112"/>
+			<key value="0.5" interpolation="0" row="115"/>
+			<key value="1" interpolation="1" row="116"/>
+			<key value="0.5" interpolation="0" row="119"/>
+			<key value="1" interpolation="1" row="120"/>
+			<key value="0.5" interpolation="0" row="123"/>
+			<key value="1" interpolation="1" row="124"/>
+			<key value="0.5" interpolation="0" row="127"/>
+			<key value="1" interpolation="1" row="128"/>
 		</track>
 	</tracks>
 	<bookmarks/>
