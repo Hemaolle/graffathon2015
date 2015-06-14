@@ -34,7 +34,7 @@ public class SplitMesh : MonoBehaviour {
 			explode.explosionNumber = explosionNumber;
 
 			RandomRotate rotate = newObject.AddComponent<RandomRotate>();
-			rotate.rocketKey = "Explosion_" + explosionNumber;
+			rotate.rocketKey = "RandomRotation_" + explosionNumber;
 
 			rotate.rotationMultiplierMin = rotationMultiplierMin;
 			rotate.rotationMultiplierMax = rotationMultiplierMax;
