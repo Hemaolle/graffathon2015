@@ -9,6 +9,7 @@ public class Rocket : Singleton<Rocket> {
 	public bool player;
 	public string trackPath = "Rocket/Tracks/";
 	public float delay = 1;
+	public AudioSource audioSource;
 
 	Track testTrack;
 	Device device;
@@ -46,9 +47,14 @@ public class Rocket : Singleton<Rocket> {
 
 	void SetPause(bool pause) {
 		playing = !pause;
-		if(playing) {
+		if (playing) {
 			startTime = Time.time;
 			startRow = row;
+			audioSource.time = row / bpm*60;
+			Debug.Log ("audio time " + audioSource.time);
+			audioSource.Play ();
+		} else {
+			audioSource.Pause();
 		}
 		Debug.LogError("pause " + pause);
 	}
