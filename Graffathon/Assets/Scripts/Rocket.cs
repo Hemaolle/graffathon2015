@@ -51,12 +51,10 @@ public class Rocket : Singleton<Rocket> {
 			startTime = Time.time;
 			startRow = row;
 			audioSource.time = row / bpm*60;
-			Debug.Log ("audio time " + audioSource.time);
 			audioSource.Play ();
 		} else {
 			audioSource.Pause();
 		}
-		Debug.LogError("pause " + pause);
 	}
 
 	bool Playing() {
