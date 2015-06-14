@@ -93,9 +93,7 @@
 			<key value="3" interpolation="1" row="129"/>
 			<key value="3" interpolation="1" row="144"/>
 			<key value="0" interpolation="1" row="160"/>
-			<key value="0" interpolation="1" row="168"/>
-			<key value="3" interpolation="1" row="176"/>
-			<key value="1" interpolation="1" row="184"/>
+			<key value="0" interpolation="1" row="176"/>
 			<key value="3" interpolation="1" row="192"/>
 			<key value="2.625" interpolation="0" row="195"/>
 			<key value="3" interpolation="0" row="196"/>
@@ -170,6 +168,16 @@
 			<key value="1" interpolation="0" row="383"/>
 			<key value="3" interpolation="0" row="384"/>
 			<key value="1" interpolation="0" row="388"/>
+			<key value="3" interpolation="0" row="392"/>
+			<key value="1" interpolation="0" row="396"/>
+			<key value="3" interpolation="0" row="400"/>
+			<key value="1" interpolation="0" row="404"/>
+			<key value="3" interpolation="0" row="408"/>
+			<key value="1" interpolation="0" row="412"/>
+			<key value="3" interpolation="0" row="416"/>
+			<key value="1" interpolation="0" row="420"/>
+			<key value="3" interpolation="0" row="424"/>
+			<key value="1" interpolation="0" row="428"/>
 		</track>
 		<track name="Explosion_1"/>
 		<track name="RandomRotation_0">
@@ -177,7 +185,7 @@
 			<key value="0" interpolation="1" row="128"/>
 			<key value="3" interpolation="1" row="144"/>
 			<key value="0" interpolation="1" row="160"/>
-			<key value="0" interpolation="1" row="168"/>
+			<key value="0" interpolation="1" row="176"/>
 			<key value="64" interpolation="0" row="511"/>
 		</track>
 		<track name="RandomRotation_1"/>
@@ -238,9 +246,10 @@
 			<key value="1" interpolation="0" row="32"/>
 		</track>
 		<track name="camera phase">
-			<key value="0" interpolation="1" row="0"/>
-			<key value="0" interpolation="1" row="272"/>
-			<key value="10" interpolation="0" row="392"/>
+			<key value="5" interpolation="1" row="0"/>
+			<key value="10" interpolation="0" row="32"/>
+			<key value="10" interpolation="1" row="272"/>
+			<key value="0" interpolation="0" row="424"/>
 		</track>
 	</tracks>
 	<bookmarks/>
