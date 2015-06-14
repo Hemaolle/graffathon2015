@@ -560,7 +560,7 @@ MonoBehaviour:
   hdr: 0
   sepBlurSpread: 2.5
   quality: 1
-  bloomIntensity: .5
+  bloomIntensity: 9.77999973
   bloomThreshold: .5
   bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
   bloomBlurIterations: 2
@@ -41999,7 +41999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   bpm: 504
-  player: 0
+  player: 1
   trackPath: Rocket/Tracks/
   delay: 1
   audioSource: {fileID: 788964151}
@@ -43375,10 +43375,10 @@ TextMesh:
   m_FontSize: 68
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 372528b671ae55a40a63b42d6a0f2da0, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4288190616
 --- !u!23 &1078762316
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43389,7 +43389,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 372528b671ae55a40a63b42d6a0f2da0, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -43409,9 +43409,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1078762314}
-  m_LocalRotation: {x: 0, y: .623944104, z: 0, w: .781468987}
-  m_LocalPosition: {x: 2.79999995, y: .400000006, z: -7.30000019}
-  m_LocalScale: {x: 1.09523475, y: 1.09523523, z: 1.09523523}
+  m_LocalRotation: {x: 0, y: .704883933, z: 0, w: .709322631}
+  m_LocalPosition: {x: 2.5999999, y: .5, z: -4}
+  m_LocalScale: {x: .849542558, y: 1.13233876, z: 1.13233876}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
