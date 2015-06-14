@@ -88,9 +88,8 @@
 			<key value="127" interpolation="0" row="127"/>
 		</track>
 		<track name="Explosion_0">
-			<key value="3" interpolation="1" row="0"/>
-			<key value="3" interpolation="1" row="128"/>
-			<key value="1" interpolation="1" row="144"/>
+			<key value="0" interpolation="1" row="0"/>
+			<key value="0" interpolation="1" row="128"/>
 			<key value="3" interpolation="1" row="160"/>
 			<key value="1" interpolation="1" row="176"/>
 			<key value="3" interpolation="1" row="192"/>
@@ -107,14 +106,33 @@
 			<key value="2.625" interpolation="0" row="219"/>
 			<key value="3" interpolation="0" row="220"/>
 			<key value="2.375" interpolation="1" row="221"/>
-			<key value="3" interpolation="0" row="224"/>
+			<key value="3" interpolation="1" row="224"/>
+			<key value="2.625" interpolation="0" row="227"/>
+			<key value="3" interpolation="0" row="228"/>
+			<key value="2.375" interpolation="1" row="229"/>
+			<key value="1.625" interpolation="0" row="235"/>
+			<key value="3" interpolation="0" row="236"/>
+			<key value="1.375" interpolation="1" row="237"/>
+			<key value="1" interpolation="1" row="240"/>
+			<key value="1.375" interpolation="0" row="243"/>
+			<key value="3" interpolation="0" row="244"/>
+			<key value="1.625" interpolation="1" row="245"/>
+			<key value="2.625" interpolation="0" row="251"/>
+			<key value="3" interpolation="0" row="252"/>
+			<key value="2.375" interpolation="1" row="253"/>
 		</track>
 		<track name="Explosion_1"/>
 		<track name="RandomRotation_0">
-			<key value="32" interpolation="1" row="0"/>
-			<key value="0" interpolation="0" row="320"/>
+			<key value="0" interpolation="1" row="0"/>
+			<key value="0" interpolation="1" row="128"/>
+			<key value="64" interpolation="0" row="511"/>
 		</track>
 		<track name="RandomRotation_1"/>
+		<track name="Exp_0_scale">
+			<key value="0.2" interpolation="1" row="0"/>
+			<key value="0.2" interpolation="1" row="64"/>
+			<key value="0.8" interpolation="1" row="128"/>
+		</track>
 	</tracks>
 	<bookmarks/>
 </sync>
