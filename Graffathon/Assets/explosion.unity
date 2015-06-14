@@ -430,6 +430,7 @@ GameObject:
   - 114: {fileID: 12505391}
   - 114: {fileID: 12505390}
   - 114: {fileID: 12505392}
+  - 114: {fileID: 12505393}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -582,6 +583,17 @@ MonoBehaviour:
   blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
   brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
     type: 3}
+--- !u!114 &12505393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 12505383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef0ec7d796cdb546b046146de90ea68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &13304058
 GameObject:
   m_ObjectHideFlags: 0
