@@ -10,6 +10,8 @@ public class SplineInterpolator : MonoBehaviour
 {
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
 
+	public string rocketKey="camera phase";
+
 	internal class SplineNode
 	{
 		internal Vector3 Point;
@@ -138,40 +140,53 @@ public class SplineInterpolator : MonoBehaviour
 		if (mState == "Reset" || mState == "Stopped" || mNodes.Count < 4)
 			return;
 
-		mCurrentTime += Time.deltaTime;
+//		mCurrentTime += Time.deltaTime;
+		mCurrentTime = Rocket.instance.GetValue (rocketKey);
 
-		// We advance to next point in the path
-		if (mCurrentTime >= mNodes[mCurrentIdx + 1].Time)
-		{
-			if (mCurrentIdx < mNodes.Count - 3)
-			{
-				mCurrentIdx++;
-			}
-			else
-			{
-				if (mState != "Loop")
-				{
-					mState = "Stopped";
-
-					// We stop right in the end point
-					transform.position = mNodes[mNodes.Count - 2].Point;
-
-					if (mRotations)
-						transform.rotation = mNodes[mNodes.Count - 2].Rot;
-
-					// We call back to inform that we are ended
-					if (mOnEndCallback != null)
-						mOnEndCallback();
-				}
-				else
-				{
-					mCurrentIdx = 1;
-					mCurrentTime = 0;
-				}
-			}
+		for (int i = 1; i < mNodes.Count - 1; i++) {
+			if(mCurrentTime > mNodes[i].Time && mCurrentTime < mNodes[i+1].Time)
+				mCurrentIdx = i;
+		}
+		if (mCurrentTime <= mNodes[1].Time)
+			mCurrentIdx = 1;
+		if (mCurrentTime >= mNodes [mNodes.Count - 2].Time) {
+			mCurrentIdx = mNodes.Count - 2;
 		}
 
-		if (mState != "Stopped")
+//		// We advance to next point in the path
+//		if (mCurrentTime >= mNodes[mCurrentIdx + 1].Time)
+//		{
+//			if (mCurrentIdx < mNodes.Count - 3)
+//			{
+//				mCurrentIdx++;
+//			}
+//			else
+//			{
+//				if (mState != "Loop")
+//				{
+//					mState = "Stopped";
+//
+//					// We stop right in the end point
+//					transform.position = mNodes[mNodes.Count - 2].Point;
+//
+//					if (mRotations)
+//						transform.rotation = mNodes[mNodes.Count - 2].Rot;
+//
+//					// We call back to inform that we are ended
+//					if (mOnEndCallback != null)
+//						mOnEndCallback();
+//				}
+//				else
+//				{
+//					mCurrentIdx = 1;
+//					mCurrentTime = 0;
+//				}
+//			}
+//		}
+
+
+
+		if (mState != "Stopped" && mCurrentIdx < mNodes.Count - 2)
 		{
 			// Calculates the t param between 0 and 1
 			float param = (mCurrentTime - mNodes[mCurrentIdx].Time) / (mNodes[mCurrentIdx + 1].Time - mNodes[mCurrentIdx].Time);

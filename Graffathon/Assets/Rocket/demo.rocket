@@ -104,9 +104,13 @@
 			<key value="1.375" interpolation="0" row="211"/>
 			<key value="3" interpolation="0" row="212"/>
 			<key value="1.625" interpolation="1" row="213"/>
-			<key value="2.625" interpolation="0" row="219"/>
+			<key value="2.29167" interpolation="0" row="217"/>
+			<key value="2" interpolation="0" row="218"/>
+			<key value="1.5" interpolation="0" row="219"/>
 			<key value="3" interpolation="0" row="220"/>
-			<key value="2.375" interpolation="1" row="221"/>
+			<key value="2" interpolation="0" row="221"/>
+			<key value="2.5" interpolation="0" row="222"/>
+			<key value="1" interpolation="0" row="223"/>
 			<key value="3" interpolation="1" row="224"/>
 			<key value="2.625" interpolation="0" row="227"/>
 			<key value="3" interpolation="0" row="228"/>
@@ -118,9 +122,51 @@
 			<key value="1.375" interpolation="0" row="243"/>
 			<key value="3" interpolation="0" row="244"/>
 			<key value="1.625" interpolation="1" row="245"/>
-			<key value="2.625" interpolation="0" row="251"/>
+			<key value="2.125" interpolation="0" row="248"/>
+			<key value="1.5" interpolation="0" row="249"/>
+			<key value="3" interpolation="0" row="250"/>
+			<key value="2" interpolation="0" row="251"/>
 			<key value="3" interpolation="0" row="252"/>
 			<key value="2.375" interpolation="1" row="253"/>
+			<key value="3" interpolation="0" row="256"/>
+			<key value="1" interpolation="0" row="260"/>
+			<key value="3" interpolation="0" row="264"/>
+			<key value="1" interpolation="0" row="268"/>
+			<key value="3" interpolation="0" row="272"/>
+			<key value="1" interpolation="0" row="276"/>
+			<key value="3" interpolation="0" row="280"/>
+			<key value="1" interpolation="0" row="284"/>
+			<key value="3" interpolation="0" row="288"/>
+			<key value="1" interpolation="0" row="292"/>
+			<key value="3" interpolation="0" row="296"/>
+			<key value="1" interpolation="0" row="300"/>
+			<key value="3" interpolation="0" row="304"/>
+			<key value="1" interpolation="0" row="308"/>
+			<key value="3" interpolation="0" row="312"/>
+			<key value="1" interpolation="0" row="316"/>
+			<key value="3" interpolation="0" row="320"/>
+			<key value="1" interpolation="0" row="324"/>
+			<key value="3" interpolation="0" row="328"/>
+			<key value="1" interpolation="0" row="332"/>
+			<key value="3" interpolation="0" row="336"/>
+			<key value="1" interpolation="0" row="340"/>
+			<key value="3" interpolation="0" row="344"/>
+			<key value="1" interpolation="0" row="348"/>
+			<key value="3" interpolation="0" row="352"/>
+			<key value="1" interpolation="0" row="356"/>
+			<key value="3" interpolation="0" row="360"/>
+			<key value="1" interpolation="0" row="364"/>
+			<key value="3" interpolation="0" row="368"/>
+			<key value="1" interpolation="0" row="372"/>
+			<key value="3" interpolation="0" row="376"/>
+			<key value="3" interpolation="0" row="378"/>
+			<key value="1" interpolation="0" row="379"/>
+			<key value="3" interpolation="0" row="380"/>
+			<key value="1" interpolation="0" row="381"/>
+			<key value="3" interpolation="0" row="382"/>
+			<key value="1" interpolation="0" row="383"/>
+			<key value="3" interpolation="0" row="384"/>
+			<key value="1" interpolation="0" row="388"/>
 		</track>
 		<track name="Explosion_1"/>
 		<track name="RandomRotation_0">

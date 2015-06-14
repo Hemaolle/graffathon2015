@@ -121,7 +121,7 @@ public class SplineController : MonoBehaviour
 	/// <summary>
 	/// Starts the interpolation
 	/// </summary>
-	void FollowSpline()
+	public void FollowSpline()
 	{
 		if (mTransforms.Length > 0)
 		{
